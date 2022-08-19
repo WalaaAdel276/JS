@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="weather.css">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="poper/popper.min.js">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/js/bootstrap.min.js">
+</head>
+
+<body>
+    <!-- start navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="IMG/logo.png" alt="" width="30" height="24">
+                <span class="navbar-brand mb-0 h1">Weather</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-white ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class=" text-white f ">
+                        <a class="nav-link" href="#">News</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Live Cemaras</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end navbar -->
+    <!-- start home page -->
+    <header>
+        <div class="bg-1">
+            <div class="container position-relative search-bar p-3">
+                <input id="searchInput" type="text" class="input-search" placeholder="Find Your Location. . .">
+                <button type="submit" id="find" class="btn  m-2 pt-2 pb-2 btn-search text-white ">Find</button>
+
+            </div>
+        </div>
+        <div class="bg-2"></div>
+        <div class="parent">
+            <div class="container">
+                <div class="d-flex row justify-content-center align-items-center text-center">
+                    <div id="today" class="col-md-4 ps-0 pe-0 pb-0">
+                        <div class="title w-100 d-flex justify-content-between p-1 ">
+                            <div class="day ps-2">Tuesday</div>
+                            <div class="date pe-2">21September</div>
+                        </div>
+                        <div class="weatherContant ms-1 w-100 text-start py-5 ps-2 pe-5">
+                            <div class="place"></div>
+                            <div class=" w-100 d-flex row mb-3 mt-4 justify-content-between ">
+                                <div class="temp  main col-md-7 me-0"></div>
+                                
+                                <div class=" col-md-3"><img class="awesome" alt=""></div>
+                                
+                            </div>
+                            <div class="min text-white mb-3 d-none"></div>
+                            <div class="descripe text-primary mb-2"></div>
+                            <span class="m-2"><i class="fas fa-umbrella"></i> 20%</span>
+                            <span class="m-2"><i class="fas fa-wind"></i> 18km/h</span>
+                            <span class="m-2"><i class="far fa-compass"></i> East</span>
+                        </div>
+                    </div>
+                    <div id="tomorrow" class="col-md-4 px-0 pb-4 ">
+                        <div class="title w-100 text-center p-1">
+                            <div class="day ">Tuesday</div>
+                        </div>
+                        <div class="weatherContant w-100 text-start py-5 ps-2 pe-5">
+                            <div class="place"></div>
+                            <div class="text-center"><img class="awesome" alt=""></div>
+                            <div class="temp text-center"></div>
+                            
+                            <div class="min text-center text-white mb-3"></div>
+                            <div class="descripe text-center text-primary"></div>
+
+                        </div>
+                    </div>
+                    <div id="afterTomorrow" class="col-md-4 ps-0 pe-0 pb-4">
+                        <div class="title w-100  text-center p-1">
+                            <div class="day">Tuesday</div>
+                        </div>
+                        <div class="weatherContant w-100 text-start py-5 ps-2 pe-5">
+                            <div class="place"></div>
+                            <div class="text-center"><img class="awesome" alt=""></div>
+                            <div class="temp text-center "></div>
+                            <div class="min text-center text-white mb-3"></div>
+                            <div class="descripe  text-center text-primary"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end home page  -->
+    <!-- start footer  -->
+    <div class="foot ">
+        <div class="container d-flex row align-content-between">
+            <div class=" position-relative search-bar p-3 mt-5 col-md-8 ms-auto mb-4">
+                <input type="text" class="input-sub" placeholder="Enter your email to subscribe....">
+                <button type="submit" class="btn  m-2 pt-2 pb-2 btn-search text-white ">Subscribe</button>
+            </div>
+            <div class="col-md-3 ms-5 mt-5 ">
+                <i class="fab fa-facebook-f p-2 m-1 icon "></i>
+                <i class="fab fa-twitter m-1 p-2 icon "></i>
+                <i class="fab fa-google-plus-g  m-1 p-2 icon "></i>
+                <i class="fab fa-pinterest m-1 p-2 icon "></i>
+
+            </div>
+            <div>
+                <span class="m-5">
+
+                    Copyright 2014 Company name. Designed by Themezy. All rights reserved</span>
+            </div>
+        </div>
+
+    </div>
+    <!-- end footer  -->
+
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+#home{
+   
+    height: 100vh;
+    
+}
+h1{
+    font-size: 90px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 50px 30px ;
+  color: rgb(119, 29, 29);
+}
+p{
+    font-size: 35px;
+    color: rgb(22, 22, 22);
+   
+}
+button{
+    width: 250px;
+    height: 80px;
+    background-color: rgb(80, 3, 3);
+    color: white;
+   margin: 40px;
+   border: 1px solid white;
+   font-size: 20px;
+}
+button:hover{
+    background-color: rgb(211, 72, 72);
+}
+#output{
+    font-size: 35px;
+    color: rgb(22, 22, 22);
+    
+}
